@@ -1,4 +1,4 @@
-[网盘下载以下内容 并解压至此处](https://pan.baidu.com/s/1yWcxMFvHPhUumOs1ZtwLng?pwd=5kwq) 资源由上海黑金提供
+[网盘下载以下内容 并解压至此处](https://pan.baidu.com/s/1yWcxMFvHPhUumOs1ZtwLng?pwd=5kwq) 密码:5kwq 资源由上海黑金提供
 
 - zynq_soft_2020 \ petalinux
   - u-boot及内核源码

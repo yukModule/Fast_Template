@@ -1,10 +1,17 @@
-> 项目适用于 arm 架构的 Linux 系统的恒大相机程序开发
+> 该模板以在ZU3EG开发板中的PS端完成大恒驱动 QT的运行环境
 >
 > 相机驱动 https://gb.daheng-imaging.com/CN/Software/Cameras/Linux/Galaxy_Linux-arm64_Gige-U3_2.4.2507.8231.zi
 >
 > 开发环境 Ubuntu18 vitis_2020.1
 >
 > 目标环境 ZU3EG petaLinux
+
+## 介绍
+
+- 使用ZU3EG开发板,在其PS端运行PetaLinux操作系统
+- 在操作系统中完成大恒相机的驱动 以及相机QT程序的运行
+- 使用emio完成数据的PL-PS间回传的握手同步
+- vivado工程与Qt源码暂不给出,仅提供top.xsa
 
 ## 快速开始
 
