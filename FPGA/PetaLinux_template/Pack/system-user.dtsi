@@ -1,0 +1,20 @@
+/include/ "system-conf.dtsi"
+
+/ {
+    chosen {
+        /* cma=512M 用于大恒相机这类高分辨率图像传输，保持现状 */
+        bootargs = "earlycon console=ttyPS0,115200 clk_ignore_unused root=/dev/mmcblk1p2 rw rootwait cma=512M";
+    };
+
+};
+
+
+&sdhci1 { 
+    disable-wp; 
+    no-1-8-v; 
+}; 
+
+&dwc3_0 { 
+    status = "okay"; 
+    dr_mode = "host"; 
+};

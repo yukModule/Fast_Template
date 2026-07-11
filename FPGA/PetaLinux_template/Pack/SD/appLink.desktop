@@ -1,0 +1,8 @@
+[Desktop Entry]
+Version=1.0
+Name=GX_ALR
+Comment=GxViewer and ALR_AS
+Exec=/media/sd-mmcblk1p1/GxViewer    # 应用程序的绝对路径
+Terminal=false                       # 是否在终端中运行
+Type=Application
+Categories=Utility;

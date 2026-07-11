@@ -1,0 +1,86 @@
+# vsim -do "add wave -position insertpoint sim:/harness/u_dut/*" -lib work top -l ../opt/simulate.log 
+# Start time: 18:53:59 on Mar 17,2026
+# Loading sv_std.std
+# Loading work.slaver_interface(fast)
+# Loading mtiUvm.uvm_pkg
+# Loading work.slaver_agent_pkg(fast)
+# Loading work.master_interface(fast)
+# Loading work.master_agent_pkg(fast)
+# Loading work.bus_if(fast)
+# Loading work.bus_agent_pkg(fast)
+# Loading work.harness_sv_unit(fast)
+# Loading work.harness(fast)
+# Loading work.master_interface(fast)
+# Loading work.slaver_interface_sv_unit(fast)
+# Loading work.slaver_interface(fast)
+# Loading work.bus_if(fast)
+# Loading work.DUT(fast)
+# Loading mtiUvm.questa_uvm_pkg(fast)
+# Loading C:/Tool/QuestaSim/uvm-1.1d\win64\uvm_dpi.dll
+# add wave -position insertpoint sim:/harness/u_dut/*
+# 1
+# 1
+# ----------------------------------------------------------------
+# UVM-1.1d
+# (C) 2007-2013 Mentor Graphics Corporation
+# (C) 2007-2013 Cadence Design Systems, Inc.
+# (C) 2006-2013 Synopsys, Inc.
+# (C) 2011-2013 Cypress Semiconductor Corp.
+# ----------------------------------------------------------------
+# 
+#   ***********       IMPORTANT RELEASE NOTES         ************
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_NO_DEPRECATED undefined.
+#   See http://www.eda.org/svdb/view.php?id=3313 for more details.
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_OBJECT_MUST_HAVE_CONSTRUCTOR undefined.
+#   See http://www.eda.org/svdb/view.php?id=3770 for more details.
+# 
+#       (Specify +UVM_NO_RELNOTES to turn off this notice)
+# 
+# UVM_INFO verilog_src/questa_uvm_pkg-1.2/src/questa_uvm_pkg.sv(215) @ 0: reporter [Questa UVM] QUESTA_UVM-1.2.3
+# UVM_INFO verilog_src/questa_uvm_pkg-1.2/src/questa_uvm_pkg.sv(217) @ 0: reporter [Questa UVM]  questa_uvm::init(+struct)
+# UVM_INFO @ 0: reporter [RNTST] Running test base_test...
+# UVM_INFO C:\Study\Project\UVM\temp\sim\../tb/tc/base_test.sv(22) @ 115: uvm_test_top.env.mst_agt.sqr@@tran_sequence [tran_sequence] send one transaction
+# UVM_INFO C:\Study\Project\UVM\temp\sim\../tb/tc/base_test.sv(22) @ 125: uvm_test_top.env.mst_agt.sqr@@tran_sequence [tran_sequence] send one transaction
+# UVM_INFO C:\Study\Project\UVM\temp\sim\../tb/tc/base_test.sv(62) @ 135: uvm_test_top [@@@cfg] ###000 cfg value is 0
+# UVM_INFO C:\Study\Project\UVM\temp\sim\../tb/tc/base_test.sv(22) @ 135: uvm_test_top.env.mst_agt.sqr@@tran_sequence [tran_sequence] send one transaction
+# UVM_INFO C:\Study\Project\UVM\temp\sim\../tb/tc/base_test.sv(22) @ 145: uvm_test_top.env.mst_agt.sqr@@tran_sequence [tran_sequence] send one transaction
+# UVM_INFO C:\Study\Project\UVM\temp\sim\../tb/tc/base_test.sv(22) @ 155: uvm_test_top.env.mst_agt.sqr@@tran_sequence [tran_sequence] send one transaction
+# UVM_INFO C:\Study\Project\UVM\temp\sim\../tb/tc/base_test.sv(22) @ 165: uvm_test_top.env.mst_agt.sqr@@tran_sequence [tran_sequence] send one transaction
+# UVM_INFO C:\Study\Project\UVM\temp\sim\../tb/tc/base_test.sv(22) @ 175: uvm_test_top.env.mst_agt.sqr@@tran_sequence [tran_sequence] send one transaction
+# UVM_INFO C:\Study\Project\UVM\temp\sim\../tb/tc/base_test.sv(65) @ 185: uvm_test_top [@@@cfg] ##111 cfg value is 0
+# UVM_INFO C:\Study\Project\UVM\temp\sim\../tb/tc/base_test.sv(68) @ 185: uvm_test_top [@@@cfg] ###222 cfg value is 1
+# UVM_INFO C:\Study\Project\UVM\temp\sim\../tb/tc/base_test.sv(71) @ 185: uvm_test_top [@@@cfg] ###333 cfg value is 0
+# UVM_INFO C:\Study\Project\UVM\temp\sim\../tb/tc/base_test.sv(74) @ 185: uvm_test_top [@@@cfg] ###444 cfg value is 1
+# UVM_INFO C:\Study\Project\UVM\temp\sim\../tb/tc/base_test.sv(77) @ 185: uvm_test_top [@@@stat] ###000 cfg value is 0
+# UVM_INFO C:\Study\Project\UVM\temp\sim\../tb/tc/base_test.sv(22) @ 185: uvm_test_top.env.mst_agt.sqr@@tran_sequence [tran_sequence] send one transaction
+# UVM_INFO C:\Study\Project\UVM\temp\sim\../tb/tc/base_test.sv(22) @ 195: uvm_test_top.env.mst_agt.sqr@@tran_sequence [tran_sequence] send one transaction
+# UVM_INFO C:\Study\Project\UVM\temp\sim\../tb/tc/base_test.sv(22) @ 205: uvm_test_top.env.mst_agt.sqr@@tran_sequence [tran_sequence] send one transaction
+# UVM_INFO C:\Study\Project\UVM\temp\sim\../tb/tc/base_test.sv(86) @ 1205: uvm_test_top [base_test] report_phase is executed
+# ---------------------------------------
+# TEST CASE PASSED
+# ---------------------------------------
+# 
+# --- UVM Report Summary ---
+# 
+# ** Report counts by severity
+# UVM_INFO :   20
+# UVM_WARNING :    0
+# UVM_ERROR :    0
+# UVM_FATAL :    0
+# ** Report counts by id
+# [@@@cfg]     5
+# [@@@stat]     1
+# [Questa UVM]     2
+# [RNTST]     1
+# [base_test]     1
+# [tran_sequence]    10
+# ** Note: $finish    : C:/Tool/QuestaSim/win64/../verilog_src/uvm-1.1d/src/base/uvm_root.svh(430)
+#    Time: 1205 ns  Iteration: 105  Instance: /harness
+# 1
+# Break in Task uvm_pkg/uvm_root::run_test at C:/Tool/QuestaSim/win64/../verilog_src/uvm-1.1d/src/base/uvm_root.svh line 430
+# End time: 18:54:35 on Mar 17,2026, Elapsed time: 0:00:36
+# Errors: 0, Warnings: 0

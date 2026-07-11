@@ -1,0 +1,37 @@
+/include/ "system-conf.dtsi"
+
+/ {
+    chosen {
+        /* cma=512M 用于大恒相机这类高分辨率图像传输，保持现状 */
+        bootargs = "earlycon console=ttyPS0,115200 clk_ignore_unused root=/dev/mmcblk1p2 rw rootwait cma=512M";
+    };
+
+    /* * 如果你只是用 C++ 代码通过 mmap 访问 0x60000000，
+     * 且 Vivado 已分配地址，则不需要在这里定义 reserved-memory。
+     * 这样可以防止内核 DMA 引擎对该地址产生误解。
+     */
+};
+
+/* 时钟配置：确保 ID 71 (通常是 PL 时钟) 稳定在 100MHz */
+&zynqmp_clk {
+    assigned-clocks = <&zynqmp_clk 71>; 
+    assigned-clock-rates = <100000000>;
+};
+
+/* SD 卡配置 */
+&sdhci1 { 
+    disable-wp; 
+    no-1-8-v; 
+}; 
+
+/* USB 控制器配置 - 针对相机识别优化 */
+&dwc3_0 { 
+    status = "okay"; 
+    dr_mode = "host"; 
+    
+    /* 下面是针对大恒相机/工业相机枚举失败的常用补丁 */
+    snps,dis_u2_susphy_quirk;     /* 禁止 USB 2.0 PHY 挂起 */
+    snps,dis_u3_susphy_quirk;     /* 禁止 USB 3.0 PHY 挂起 */
+    snps,minimal_8bit_interface;  /* 强制 8位 ULPI 接口，增加稳定性 */
+    snps,parkmode-disable-ss-quirk; /* 禁用高速模式下的某些节能机制，防止丢包 */
+};

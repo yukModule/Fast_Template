@@ -1,0 +1,6 @@
+{
+    "files.associations": {
+        "function.h": "c"
+    },
+    "C_Cpp.default.compilerPath": "c:\\TOOLS\\mingw64\\bin\\gcc.exe"
+}

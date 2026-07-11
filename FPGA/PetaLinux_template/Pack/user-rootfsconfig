@@ -1,0 +1,21 @@
+#Note: Mention Each package in individual line
+#These packages will get added into rootfs menu entry
+
+CONFIG_gpio-demo
+CONFIG_peekpoke
+CONFIG_autostart
+
+# GX
+CONFIG_libgomp
+CONFIG_libgomp-dev
+CONFIG_libgomp-staticdev
+
+# QT
+CONFIG_gdb
+CONFIG_gdbserver
+CONFIG_packagegroup-petalinux-matchbox
+CONFIG_packagegroup-petalinux-opencv 
+CONFIG_packagegroup-petalinux-qt
+CONFIG_packagegroup-petalinux-v4lutils
+CONFIG_packagegroup-petalinux-x11
+CONFIG_libmali-xlnx
